@@ -1,0 +1,15 @@
+p#notice = notice
+
+p
+  strong Title:
+  = @post.title
+p
+  strong Content:
+  = @post.content
+p
+  strong User:
+  = @post.user.email
+
+= link_to 'Изменить', edit_post_path(@post)
+'  |
+= link_to 'Вернуться', posts_path

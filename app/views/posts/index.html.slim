@@ -1,0 +1,10 @@
+h2 Журнал сообщений
+
+- @posts.each do |post|
+  h1 = post.title
+  p = post.content
+  div
+     b Автор: 
+     = post.user.email
+
+= link_to 'Новое сообщение', new_post_path, class: 'btn btn-default'
